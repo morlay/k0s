@@ -230,7 +230,7 @@ func (s *BasicSuite) verifyContainerdDefaultConfig(ctx context.Context) {
 		Plugins struct {
 			CRI struct {
 				SandboxImage string `toml:"sandbox_image"`
-			} `toml:"io.containerd.grpc.v1.cri"`
+			} `toml:"io.containerd.cri.v1.runtime"`
 		} `toml:"plugins"`
 	}
 
